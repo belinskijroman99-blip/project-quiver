@@ -1,0 +1,44 @@
+# ==============================================================================
+# ArduPilot AP_Periph Register Specification Matrix
+# Target: Matek CAN-L431 JMRRC Adapter Node (Issue #233)
+# Platform: Quiver PT3 Heavy Quadcopter
+# Standards: DO-178C Level B Traceable
+# ==============================================================================
+
+# CAN Bus Driver Identification
+CAN_NODE,0
+CAN_P1_DRIVER,1
+CAN_P2_DRIVER,1
+CAN_P1_BITRATE,1000000
+CAN_P2_BITRATE,1000000
+
+# PWM Output Frequency Configurations
+RC_SPEED,400
+OUT1_FREQ,400
+OUT2_FREQ,50
+
+# Actuator Mapping (ESC Spinner -> PWM1, Gate Servo -> PWM2)
+OUT1_FUNCTION,33
+OUT1_MIN,1000
+OUT1_MAX,2000
+OUT1_TRIM,1000
+OUT1_REVERSED,0
+
+OUT2_FUNCTION,28
+OUT2_MIN,1000
+OUT2_MAX,2000
+OUT2_TRIM,1000
+OUT2_REVERSED,0
+
+# Node-Level Autonomous Failsafe Interlock Configuration
+# Enforces instantaneous 1000 us (Gate Closed) upon bus loss > 500 ms
+OUT_FAIL_TIMEOUT,500
+OUT1_FAIL_ACT,1
+OUT1_FAIL_VALUE,1000
+OUT2_FAIL_ACT,1
+OUT2_FAIL_VALUE,1000
+
+# GPIO Telemetry & Interlock Sensor (Hopper Empty on PB0)
+GPIO_PIN1,52
+GPIO_PIN1_MODE,0
+GPIO_PIN1_PULL,1

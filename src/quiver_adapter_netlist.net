@@ -1,0 +1,171 @@
+( { EESchema Netlist Version 1.1 created  Sun 25 Oct 2026 05:07:00 PM }
+  ( /
+    ( 1 +12V_PL )
+    ( 2 GND )
+    ( 3 CAN2_H )
+    ( 4 CAN2_L )
+    ( 5 +5V_LOCAL )
+    ( 6 +3V3_MCU )
+    ( 7 PWM_SPINNER_PA0 )
+    ( 8 PWM_GATE_PA1 )
+    ( 9 SENSOR_EMPTY_PB0 )
+    ( 10 HV_SW_14S_IN )
+    ( 11 HV_12V_ACTUATOR )
+    ( 12 GND_POWER )
+  )
+  { Component Definitions }
+  ( J1 POGO_PADS_V14
+    ( 1 +12V_PL )
+    ( 2 GND )
+    ( 3 CAN2_H )
+    ( 4 CAN2_L )
+  )
+  ( J2 PHOENIX_1814919_2P
+    ( 1 HV_SW_14S_IN )
+    ( 2 GND_POWER )
+  )
+  ( U1 LOCAL_BUCK_5V
+    ( 1 +12V_PL )
+    ( 2 GND )
+    ( 3 +5V_LOCAL )
+    ( 4 GND )
+  )
+  ( U2 LDO_3V3
+    ( 1 +5V_LOCAL )
+    ( 2 GND )
+    ( 3 +3V3_MCU )
+  )
+  ( U3 CAN_TRANSCEIVER_TJA1051
+    ( 1 CAN1_TX )
+    ( 2 GND )
+    ( 3 +5V_LOCAL )
+    ( 4 CAN1_RX )
+    ( 5 GND )
+    ( 6 CAN2_L )
+    ( 7 CAN2_H )
+    ( 8 GND )
+  )
+  ( U4 MCU_STM32L431CCT6
+    ( 1 +3V3_MCU )
+    ( 7 NRST )
+    ( 8 GND )
+    ( 10 PA0 )
+    ( 11 PA1 )
+    ( 18 PB0 )
+    ( 23 GND )
+    ( 24 +3V3_MCU )
+    ( 32 PA11 )
+    ( 33 PA12 )
+    ( 35 GND )
+    ( 36 +3V3_MCU )
+    ( 47 GND )
+    ( 48 +3V3_MCU )
+  )
+  ( U5 BUCK_60V_TO_12V_5A
+    ( 1 HV_SW_14S_IN )
+    ( 2 GND_POWER )
+    ( 3 HV_12V_ACTUATOR )
+    ( 4 GND_POWER )
+  )
+  ( J3 MOLEX_43045_06XX
+    ( 1 HV_12V_ACTUATOR )
+    ( 2 GND_POWER )
+    ( 3 PWM_GATE_PA1 )
+    ( 4 PWM_SPINNER_PA0 )
+    ( 5 SENSOR_EMPTY_PB0 )
+    ( 6 GND )
+  )
+  ( R1 RES_10K_PULLUP
+    ( 1 +3V3_MCU )
+    ( 2 SENSOR_EMPTY_PB0 )
+  )
+  ( C1 CAP_100UF_100V
+    ( 1 HV_SW_14S_IN )
+    ( 2 GND_POWER )
+  )
+  ( C2 CAP_47UF_25V
+    ( 1 HV_12V_ACTUATOR )
+    ( 2 GND_POWER )
+  )
+  { Net Descriptions }
+  ( Net 1 +12V_PL
+    J1-1
+    U1-1
+  )
+  ( Net 2 GND
+    J1-2
+    U1-2
+    U1-4
+    U2-2
+    U3-2
+    U3-5
+    U3-8
+    U4-8
+    U4-23
+    U4-35
+    U4-47
+    J3-6
+    GND_POWER
+  )
+  ( Net 3 CAN2_H
+    J1-3
+    U3-7
+  )
+  ( Net 4 CAN2_L
+    J1-4
+    U3-6
+  )
+  ( Net 5 +5V_LOCAL
+    U1-3
+    U2-1
+    U3-3
+  )
+  ( Net 6 +3V3_MCU
+    U2-3
+    U4-1
+    U4-24
+    U4-36
+    U4-48
+    R1-1
+  )
+  ( Net 7 CAN1_TX
+    U3-1
+    U4-33
+  )
+  ( Net 8 CAN1_RX
+    U3-4
+    U4-32
+  )
+  ( Net 9 PWM_SPINNER_PA0
+    U4-10
+    J3-4
+  )
+  ( Net 10 PWM_GATE_PA1
+    U4-11
+    J3-3
+  )
+  ( Net 11 SENSOR_EMPTY_PB0
+    U4-18
+    R1-2
+    J3-5
+  )
+  ( Net 12 HV_SW_14S_IN
+    J2-1
+    U5-1
+    C1-1
+  )
+  ( Net 13 HV_12V_ACTUATOR
+    U5-3
+    C2-1
+    J3-1
+  )
+  ( Net 14 GND_POWER
+    J2-2
+    U5-2
+    U5-4
+    C1-2
+    C2-2
+    J3-2
+    GND
+  )
+)

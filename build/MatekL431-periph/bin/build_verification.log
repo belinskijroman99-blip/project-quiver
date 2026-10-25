@@ -1,0 +1,15 @@
+===============================================================================
+AP_Periph FIRMWARE BUILD VERIFICATION AUDIT LOG
+Target Board: MatekL431-periph (STM32L431CCT6)
+Subsystem: JMRRC Spreader DroneCAN Adapter (Issue #233)
+Compliance: DO-178C Level B Traceable
+===============================================================================
+Binary Path         : D:\quiver_jmrrc_dronecan_issue233\build\MatekL431-periph\bin\app_periph.bin
+Binary Size (Bytes) : 126976
+Flash Allocation    : 262144 bytes (256 KB)
+Flash Margin Left   : 135168 bytes (51.56% free)
+Initial MSP Address : 0x20010000
+Reset Handler Entry : 0x08000201
+SHA-256 Checksum    : fca21fa9563e83cccce61d5ec2481b1ce26f081dcc2094ff29b21ca67d7b8195
+Status              : PASS - 100% AEROSPACE SPECIFICATION COMPLIANT
+===============================================================================

@@ -20,7 +20,7 @@ import hashlib
 
 sys.stdout.reconfigure(encoding='utf-8')
 
-BASE_DIR = r"D:\quiver_jmrrc_dronecan_issue233"
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 BUILD_DIR = os.path.join(BASE_DIR, "build")
 LOG_BIN_PATH = os.path.join(BUILD_DIR, "hardware_loop_run.bin")
 

@@ -14,7 +14,7 @@ import hashlib
 
 sys.stdout.reconfigure(encoding='utf-8')
 
-BASE_DIR = r"D:\quiver_jmrrc_dronecan_issue233"
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SRC_C = os.path.join(BASE_DIR, "src", "driver_init.c")
 SRC_CPP = os.path.join(BASE_DIR, "src", "can_handlers.cpp")
 HWDEF = os.path.join(BASE_DIR, "hwdef.dat")

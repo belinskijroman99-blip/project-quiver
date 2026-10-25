@@ -12,7 +12,7 @@ import math
 import struct
 import socket
 
-LOG_DIR = r"D:\quiver_sitl_bounty\logs"
+LOG_DIR = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "logs")
 LOG_FILE = os.path.join(LOG_DIR, "sitl_quiver_dropout_run.bin")
 
 def generate_binary_telemetry_log(log_path, num_samples=250):

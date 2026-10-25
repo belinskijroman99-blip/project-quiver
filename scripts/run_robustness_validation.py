@@ -19,7 +19,7 @@ import hashlib
 
 sys.stdout.reconfigure(encoding='utf-8')
 
-BASE_DIR = r"D:\quiver_jmrrc_dronecan_issue233"
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SCRIPTS_DIR = os.path.join(BASE_DIR, "scripts")
 DOCS_CORE_DIR = os.path.join(BASE_DIR, "docs", "core")
 REPORT_PATH = os.path.join(DOCS_CORE_DIR, "05_ROBUSTNESS_TEST_REPORT.md")

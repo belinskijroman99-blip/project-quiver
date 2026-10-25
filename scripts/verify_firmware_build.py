@@ -2,7 +2,7 @@
 """
 Automated Firmware Build Verification Inspector
 Compliance: DO-178C Level B Traceability
-Target: D:\quiver_jmrrc_dronecan_issue233\build\MatekL431-periph\bin\app_periph.bin
+Target: build/MatekL431-periph/bin/app_periph.bin
 """
 
 import os
@@ -12,7 +12,7 @@ import hashlib
 
 sys.stdout.reconfigure(encoding='utf-8')
 
-BASE_DIR = r"D:\quiver_jmrrc_dronecan_issue233"
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 BIN_PATH = os.path.join(BASE_DIR, "build", "MatekL431-periph", "bin", "app_periph.bin")
 LOG_PATH = os.path.join(BASE_DIR, "build", "MatekL431-periph", "bin", "build_verification.log")
 

@@ -29,7 +29,7 @@ SITL_CMD = [
     "--defaults", PARAM_FILE_WSL
 ]
 
-LOG_DIR = r"D:\quiver_sitl_bounty\logs"
+LOG_DIR = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "logs")
 LOG_FILE = os.path.join(LOG_DIR, "sitl_quiver_dropout_run.bin")
 
 DEFAULT_LAT = 30.2672   # Austin, Texas test latitude

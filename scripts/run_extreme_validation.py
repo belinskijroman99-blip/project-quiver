@@ -24,7 +24,7 @@ import os
 
 sys.stdout.reconfigure(encoding='utf-8')
 
-LOG_DIR = r"D:\quiver_sitl_bounty\logs"
+LOG_DIR = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "logs")
 LOG_CERTIFIED = os.path.join(LOG_DIR, "extreme_flight_certified.bin")
 
 def run_extreme_validation():

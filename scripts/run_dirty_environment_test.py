@@ -16,7 +16,7 @@ import random
 import struct
 import os
 
-LOG_DIR = r"D:\quiver_sitl_bounty\logs"
+LOG_DIR = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "logs")
 LOG_DIRTY = os.path.join(LOG_DIR, "sitl_quiver_dirty_run.bin")
 
 def run_dirty_environment_stress_test():

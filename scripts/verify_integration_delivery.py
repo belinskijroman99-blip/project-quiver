@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 Aerospace Configuration & Integration Delivery Inspector
-Target: D:\quiver_jmrrc_dronecan_issue233
+Target: Repository Root
 Compliance: DO-178C Level B Data Configuration Management
 
 Performs Forensic Checks:
@@ -33,7 +33,7 @@ import hashlib
 
 sys.stdout.reconfigure(encoding='utf-8')
 
-BASE_DIR = r"D:\quiver_jmrrc_dronecan_issue233"
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DOCS_CORE_DIR = os.path.join(BASE_DIR, "docs", "core")
 BIN_FIRMWARE = os.path.join(BASE_DIR, "build", "MatekL431-periph", "bin", "app_periph.bin")
 BIN_HIL_LOG = os.path.join(BASE_DIR, "build", "hardware_loop_run.bin")

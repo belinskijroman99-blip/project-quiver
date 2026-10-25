@@ -9,10 +9,10 @@
 
 ## 1. Traceable Codebase & Project Directory Tree
 
-The complete firmware implementation, electrical schematics, flight parameters, and verification harnesses are strictly maintained within the isolated repository `D:\quiver_jmrrc_dronecan_issue233\`:
+The complete firmware implementation, electrical schematics, flight parameters, and verification harnesses are strictly maintained within the project repository:
 
 ```
-D:\quiver_jmrrc_dronecan_issue233\
+. (project-quiver)
 ├── build\
 │   ├── MatekL431-periph\
 │   │   └── bin\

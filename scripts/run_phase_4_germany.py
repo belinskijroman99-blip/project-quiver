@@ -15,7 +15,7 @@ import math
 import struct
 import os
 
-LOG_DIR = r"D:\quiver_sitl_bounty\logs"
+LOG_DIR = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "logs")
 LOG_PHASE_4 = os.path.join(LOG_DIR, "sitl_phase_4_germany_run.bin")
 
 def run_phase_4_germany_corridor_test():

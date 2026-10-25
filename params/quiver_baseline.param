@@ -1,0 +1,54 @@
+# Quiver Merged Texas Baseline v1 Parameters
+# Integrated from standard-params.param and params-object-avoidance.param
+# Configured for: RPLidar S2L (1 Mbaud), BendyRuler OA, and Houston/Germany deployment envelope
+
+# --- Frame & Orientation ---
+FRAME_CLASS,1
+FRAME_TYPE,1
+
+# --- Battery & Failsafes ---
+BATT_MONITOR,4
+BATT_CAPACITY,16000
+FS_BATT_VOLT,21.6
+FS_BATT_MAH,2000
+FS_GCS_ENABLE,1
+FS_THR_ENABLE,1
+
+# --- Serial 5: RPLidar S2L UART @ 1 Mbaud ---
+SERIAL5_PROTOCOL,11
+SERIAL5_BAUD,1000
+
+# --- Proximity 1: RPLidar S2 / S2L Native Driver ---
+PRX1_TYPE,5
+PRX1_ORIENT,0
+PRX1_YAW_CORR,0
+PRX1_MIN,0.2
+PRX1_MAX,18.0
+PRX1_IGN_GND,0
+
+# --- Object Avoidance (BendyRuler) ---
+AVOID_ENABLE,7
+AVOID_MARGIN,2.0
+AVOID_BEHAVE,0
+AVOID_DIST_MAX,15.0
+AVOID_BACKUP_SPD,1.0
+
+OA_TYPE,1
+OA_BR_LOOKAHEAD,12.0
+OA_BR_TYPE,1
+OA_MARGIN_MAX,4.0
+OA_OPTIONS,1
+
+# --- Guidance & Navigation Dynamics ---
+WPNAV_SPEED,800.0
+WPNAV_SPEED_UP,300.0
+WPNAV_SPEED_DN,200.0
+WPNAV_ACCEL,250.0
+WPNAV_RADIUS,200.0
+ANGLE_MAX,3000
+
+# --- Supplemental Radar & Altimeter (NanoRadar MR82 + Lidar Rangefinder) ---
+PRX2_TYPE,0
+RNGFND1_TYPE,1
+RNGFND1_MIN_CM,20
+RNGFND1_MAX_CM,3000

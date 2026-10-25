@@ -1,0 +1,24 @@
+# Arrow-Air project-quiver: Standard Baseline Parameters
+# Section: task-grant-bounty/Dev-Kit/standard-params.param
+
+FRAME_CLASS,1
+FRAME_TYPE,1
+BATT_MONITOR,4
+BATT_CAPACITY,16000
+FS_BATT_VOLT,21.6
+FS_BATT_MAH,2000
+FS_GCS_ENABLE,1
+FS_THR_ENABLE,1
+
+# Dynamics & Navigation
+WPNAV_SPEED,800.0
+WPNAV_SPEED_UP,300.0
+WPNAV_SPEED_DN,200.0
+WPNAV_ACCEL,250.0
+WPNAV_RADIUS,200.0
+ANGLE_MAX,3000
+
+# Telemetry & Ports
+SERIAL0_BAUD,115
+SERIAL1_BAUD,57
+SERIAL2_BAUD,57

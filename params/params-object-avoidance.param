@@ -1,0 +1,33 @@
+# Arrow-Air project-quiver: Obstacle Avoidance Configuration
+# Section: task-grant-bounty/Dev-Kit/params-object-avoidance.param
+
+# --- Serial 5: RPLidar S2L UART @ 1 Mbaud ---
+SERIAL5_PROTOCOL,11
+SERIAL5_BAUD,1000
+
+# --- Proximity 1: RPLidar S2 / S2L Native ---
+PRX1_TYPE,5
+PRX1_ORIENT,0
+PRX1_YAW_CORR,0
+PRX1_MIN,0.2
+PRX1_MAX,18.0
+PRX1_IGN_GND,0
+
+# --- Object Avoidance (BendyRuler) ---
+AVOID_ENABLE,7
+AVOID_MARGIN,2.0
+AVOID_BEHAVE,0
+AVOID_DIST_MAX,15.0
+AVOID_BACKUP_SPD,1.0
+
+OA_TYPE,1
+OA_BR_LOOKAHEAD,12.0
+OA_BR_TYPE,1
+OA_MARGIN_MAX,4.0
+OA_OPTIONS,1
+
+# Supplemental Radar / Altimeter Integration
+PRX2_TYPE,0
+RNGFND1_TYPE,1
+RNGFND1_MIN_CM,20
+RNGFND1_MAX_CM,3000
